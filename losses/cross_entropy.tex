@@ -11,11 +11,27 @@
 This document contains loss equations.
 \end{abstract}
 
+\section{Entropy}
+
+$$
+E(t) = \sum_{i=1}^{M}t_i\log(\frac{1}{t_i})
+$$
+
+
 \section{Cross Entropy}
 
 $$
-    H(p, t) = - \sum_{j=1}^{M} t_j \log p_j
+    L(p, t) = \sum_{i=1}^{M} t_i \log(\frac{1}{p_i})
 $$
-\textbf{where $p$ is the predicted value and $t$ is the groundtruth. $M$ is the number of classes.}
+
+\section{Binary Cross Entropy}
+
+$$
+    L(p, t) = \sum_{i=0}^{1} t_i \log(\frac{1}{p_i}) = t_0\log(\frac{1}{p_0}) + t_1\log(\frac{1}{p_1})
+$$
+where
+$$
+    t_1 = 1 - t_0
+$$
 
 \end{document}

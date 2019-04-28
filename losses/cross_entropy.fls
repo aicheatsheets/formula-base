@@ -26,11 +26,9 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 OUTPUT c:/Users/Ali/Desktop/formula-base/losses/cross_entropy.pdf
 INPUT c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/Users/Ali/Desktop/formula-base/losses/cross_entropy.aux
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
