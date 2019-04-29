@@ -1,0 +1,59 @@
+\documentclass{article}
+
+\begin{document}
+
+\title{VQA Accuracy Proposal}
+\author{Ali Gholami}
+
+\maketitle
+
+\begin{abstract}
+This document contains a new accuracy equation.
+\end{abstract}
+
+\section{Current Metric (VQA Accuracy)}
+Assume there are 10 words in the vocabulary. Let's investigate three major cases.
+$$
+    \vec{GT} = [5, 3, 2, 0, 0, 0, 0, 0, 0, 0]
+$$
+\subsection{Model 1}
+$$
+    \vec{PV} = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+$$
+\subsection{Model 2}
+$$
+    \vec{PV} = [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+$$
+\subsection{Model 3}
+$$
+    \vec{PV} = [0, 2, 0, 0, 0, 0, 0, 0, 0, 0]
+$$
+
+In all cases, the computed accuracy is 100\%.
+While it may seem plausible (since 5 human annotators have already annotated this word as the answer), there is \textbf{answer confidence} missing from this metric.
+\begin{enumerate}
+    \item repeition should be considered important for the model, since the \textbf{negative log likelihood} is pushing the model toward the direction to predict 5.
+    \item In model 1, although the answer is correct and the learning is being done flawlessly, the metric does not seem to be plausible to compare the models based on it.
+    \item In model 2, no emphasis is made on the best answer (although predicted answer is also humanely-acceptable but its not the best one).
+    \item Model 3 is another case of problem 1.
+\end{enumerate}
+
+\section{New Metric (NZAD: Non-zeros Averaged Dot Product)}
+In this section, we propose a new method called \textbf{NZAD} which investigates two main components while calculating the accuracy:
+\begin{enumerate}
+    \item Answer Generation Validity
+    \item Answer Validity Confidence
+\end{enumerate}
+We also believe that this method requires has an edge to the previous method in terms of computational efficiency (non-zeros processed only, but this totally depends on the way we implement it).
+\begin{equation}
+    \label{newMeth}
+    NZAD(p, t) = \frac{\frac{2}{NZ(t)} * \frac{<p, t>}{||p||_2 + ||t||_2} + min\{ \frac{AGA}{3}, 1\}}{2}
+\end{equation}
+
+where $NZ(t)$ is the number of non-zero elements in t. AGA is the number of agreeing human answers with the predicted answer. Computing the accuracy using \ref{newMeth} for the given model predictions:
+\begin{itemize}
+    \item Model 1: 56\%
+    \item Model 2: 46\%
+    \item Model 3: 49\%
+\end{itemize}
+\end{document}
