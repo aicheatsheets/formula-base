@@ -50,7 +50,7 @@ We also believe that this method has an edge to the previous method in terms of 
     NZAD(p, t) = \frac{\frac{2}{NZ(t)} * \frac{<p, t>}{||p||_2 + ||t||_2} + min\{ \frac{AGA}{3}, 1\}}{2}
 \end{equation}
 
-where $NZ(t)$ is the number of non-zero elements in t. AGA is the number of agreeing human answers with the predicted answer. Computing the accuracy using \ref{newMeth} for the given model predictions:
+where $t$ is the ground truth vector and $p$ is the predicted vector. $NZ(t)$ is the number of non-zero elements in t. AGA is the number of agreeing human answers with the predicted answer. Computing the accuracy using \ref{newMeth} for the given model predictions:
 \begin{itemize}
     \item Model 1: 56\%
     \item Model 2: 46\%

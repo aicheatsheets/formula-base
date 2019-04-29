@@ -65,9 +65,9 @@ Here is how much of TeX's memory you used:
  4206 multiletter control sequences out of 15000+600000
  8502 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,6n,19p,274b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,6n,19p,338b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on c:/Users/Ali/Desktop/formula-base/accuracies/acc_metrics.pdf (2 pages, 137752 bytes).
+Output written on c:/Users/Ali/Desktop/formula-base/accuracies/acc_metrics.pdf (2 pages, 137833 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
